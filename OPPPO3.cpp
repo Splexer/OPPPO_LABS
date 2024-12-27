@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <string>
 #include <iomanip>
@@ -230,4 +231,56 @@ int main() {
     return 0;
 
 }
-
+////@startuml
+////abstract class PET {
+////    -name: string
+////        - date_last_vet : string
+////        + set_name(name : &string) : void
+////        + set_date_last_vet(date : &string) : void
+////        + get_name() : string
+////        + get_date_last_vet() : string
+////        + print() : void
+////}
+////
+////class CAT {
+////    -poroda: string
+////        - age : int
+////        - color : string
+////        + CAT(name : &string, date : &string, age : int, poroda : &string, color : &string)
+////        + set_age(age : int) : void
+////        + set_poroda(poroda : &string) : void
+////        + set_color(color : &string) : void
+////        + get_age() : int
+////        + get_poroda() : string
+////        + get_color() : string
+////        + print() : void
+////}
+////
+////class DOG {
+////    -poroda: string
+////        - age : int
+////        - weight : double
+////        + DOG(name : &string, date : &string, age : int, poroda : &string, weight : double)
+////        + set_age(age : int) : void
+////        + set_poroda(poroda : &string) : void
+////        + set_weight(weight : double) : void
+////        + get_age() : int
+////        + get_poroda() : string
+////        + get_weight() : double
+////        + print() : void
+////}
+////
+////class PARROT {
+////    -type: string
+////        - wing_size : double
+////        + PARROT(name : &string, date : &string, type : &string, wing_size : double)
+////        + set_type(type : &string) : void
+////        + set_wing_size(wing_size : double) : void
+////        + get_type() : string
+////        + get_wing_size() : double
+////        + print() : void
+////}
+////
+////PET < | --CAT
+////    PET < | --DOG
+////    PET < | --PARROT
