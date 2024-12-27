@@ -64,7 +64,7 @@ public:
     string get_color() {
         return color;
     }
-    void print() {
+    void print() override {
         cout << "1. Имя: " << get_name() << endl;
         cout << "2. Последний визит:" << get_date_last_vet() << endl;
         cout << "3. Порода: " << get_poroda() << endl;
@@ -104,7 +104,7 @@ public:
     double get_weight() {
         return weight;
     }
-    void print() {
+    void print() override {
         cout << "1. Имя: " << get_name() << endl;
         cout << "2. Последний визит:" << get_date_last_vet() << endl;
         cout << "3. Порода: " << get_poroda() << endl;
@@ -135,7 +135,7 @@ public:
     double get_wing_size() {
         return wing_size;
     }
-    void print() {
+    void print() override {
         cout << "1. Имя: " << get_name() << endl;
         cout << "2. Последний визит:" << get_date_last_vet() << endl;
         cout << "3. Вид: " << get_type() << endl;
