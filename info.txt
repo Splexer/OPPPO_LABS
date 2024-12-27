@@ -1,0 +1,8 @@
+add CAT barsik 10-10-2020 5 british black
+add DOG tima 10-10-2022 3 retriver 5
+add PARROT kesha 08-06-2024 ara 4
+add awdawd kesha 08-08-08
+print
+rem 2
+rem tima
+print
