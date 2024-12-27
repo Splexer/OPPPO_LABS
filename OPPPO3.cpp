@@ -16,10 +16,10 @@ public:
     string date_last_vet;
 
 public:
-    void set_name(string name) {
+    void set_name(string &name) {
         this->name = name;
     }
-    void set_date_last_vet(string date) {
+    void set_date_last_vet(string &date) {
         this->date_last_vet = date;
     }
     virtual string get_name() {
@@ -38,7 +38,7 @@ public:
     int age;
     string color;
 public:
-    CAT(string name, string date, int age, string poroda, string color) {
+    CAT(string &name, string& date, int age, string& poroda, string& color) {
         set_name(name);
         set_date_last_vet(date);
         set_age(age);
@@ -48,10 +48,10 @@ public:
     void set_age(int age) {
         this->age = age;
     }
-    void set_poroda(string poroda) {
+    void set_poroda(string& poroda) {
         this->poroda = poroda;
     }
-    void set_color(string color) {
+    void set_color(string& color) {
         this->color = color;
     }
 
@@ -79,7 +79,7 @@ public:
     int age;
     double weight;
 public:
-    DOG(string name, string date, int age, string poroda, double weight) {
+    DOG(string& name, string& date, int age, string& poroda, double weight) {
         set_name(name);
         set_date_last_vet(date);
         set_age(age);
@@ -89,7 +89,7 @@ public:
     void set_age(int age) {
         this->age = age;
     }
-    void set_poroda(string poroda) {
+    void set_poroda(string& poroda) {
         this->poroda = poroda;
     }
     void set_weight(double weight) {
@@ -117,13 +117,13 @@ class PARROT :public PET {
 public:
     string type;
     double wing_size;
-    PARROT(string name, string date, string type, double wing_size) {
+    PARROT(string& name, string& date, string& type, double wing_size) {
         set_name(name);
         set_date_last_vet(date);
         set_type(type);
         set_wing_size(wing_size);
     }
-    void set_type(string type) {
+    void set_type(string& type) {
         this->type = type;
     }
     void set_wing_size(double wing_size) {
