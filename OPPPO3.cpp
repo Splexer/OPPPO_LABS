@@ -58,10 +58,10 @@ public:
     int get_age() {
         return age;
     }
-    string get_poroda() {
+    const string& get_poroda() const {
         return poroda;
     }
-    string get_color() {
+    const string& get_color() const {
         return color;
     }
     void print() override {
@@ -98,7 +98,7 @@ public:
     int get_age() {
         return age;
     }
-    string get_poroda() {
+    const string& get_poroda() const {
         return poroda;
     }
     double get_weight() {
@@ -123,13 +123,13 @@ public:
         set_type(type);
         set_wing_size(wing_size);
     }
-    void set_type(string& type) {
+    void set_type(string &type) {
         this->type = type;
     }
     void set_wing_size(double wing_size) {
         this->wing_size = wing_size;
     }
-    string get_type() {
+    const string& get_type() const {
         return type;
     }
     double get_wing_size() {
